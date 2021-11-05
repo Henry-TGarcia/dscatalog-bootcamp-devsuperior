@@ -1,0 +1,29 @@
+.main-nav{
+    padding-left: 40px;
+    min-height: 70px;
+}
+
+.nav-logo-text, .nav-logo-text:hover{
+    color: #fff;
+}
+
+.main-menu{
+    display: flex; /*Estou dizendo o o meu main-menu é o cara que vai organizar os componentes dentro do meu 'ul' com o flexbox */
+    font-size: 18px;
+    width: 380px;
+    justify-content: space-between; /*Quero que temha espaço apenas entre os elementos */
+}
+
+.main-menu a { /*Dentro da 'main-menu' o 'a' vai ter a cor */
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+.main-menu a:hover{
+    color: #fff;
+}
+
+.main-menu a.active { 
+    color: #fff;
+    font-weight: bold;
+
+}
