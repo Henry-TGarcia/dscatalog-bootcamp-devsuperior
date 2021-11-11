@@ -55,11 +55,7 @@
         width: 506px;
         margin-bottom: 20px;
     }
-
-    .home-content-container button {
-        width: 506px;
-    }
-
+ 
     .home-image-container svg {
         width: 506px; 
         height: auto;
@@ -81,8 +77,6 @@
         padding: 40px;
         font-size: 55px;
     }
-
-    
 
     .home-content-container {
         padding: 20px 20px 150px 20px;
