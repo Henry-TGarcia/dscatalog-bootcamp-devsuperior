@@ -61,7 +61,7 @@ public class ProductResourceTests {
 		page = new PageImpl<>(List.of(productDTO));
 
 		// Simulando comportamento do Método FindAll
-		when(service.findAllPaged(ArgumentMatchers.any())).thenReturn(page);
+		//when(service.findAllPaged(ArgumentMatchers.any())).thenReturn(page);
 
 		// Simulando comportamento do Método findById
 		when(service.findById(existingId)).thenReturn(productDTO);

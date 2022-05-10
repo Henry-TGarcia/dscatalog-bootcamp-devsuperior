@@ -126,7 +126,7 @@ public class ProductServiceTests {
 		Mockito.verify(repository, Mockito.times(1)).findById(existingId);
 	}
 
-	@Test
+	/*@Test
 	public void findAllPagedShouldReturnPage() {
 		// Asserts
 		Pageable pageable = PageRequest.of(0, 10);
@@ -138,7 +138,7 @@ public class ProductServiceTests {
 		Assertions.assertNotNull(result);
 		Mockito.verify(repository, Mockito.times(1)).findAll(pageable);
 
-	}
+	}*/
 
 	@Test
 	public void deleteShouldThrowDatabaseExceptionWhenIdDoesNotExist() {
