@@ -53,12 +53,12 @@ public class ProductServiceIT {
 		});
 	}
 	
-	/*@Test
+	@Test
 	public void findAllPagedShouldReturnPageWhenPage0Size10() {
 		//Arrange							pagina0, n elementos10
 		PageRequest pageRequest = PageRequest.of(0, 10);
 		//Act
-		Page<ProductDTO> result = service.findAllPaged(pageRequest);
+		Page<ProductDTO> result = service.findAllPaged(0L, "", pageRequest);
 		//Assertions
 		Assertions.assertFalse(result.isEmpty());
 		Assertions.assertEquals(0, result.getNumber());//testar se é mesmo a Pagina0
@@ -72,7 +72,7 @@ public class ProductServiceIT {
 		//Arrange
 		PageRequest pageRequest = PageRequest.of(50, 10);
 		//Act
-		Page<ProductDTO> result = service.findAllPaged(pageRequest);
+		Page<ProductDTO> result = service.findAllPaged(0L, "", pageRequest);
 		//Assertions
 		Assertions.assertTrue(result.isEmpty());
 	}
@@ -82,7 +82,7 @@ public class ProductServiceIT {
 		//Arrange						pagina, quantidade de elementos, ordenação dos eleme	
 		PageRequest pageRequest = PageRequest.of(0, 10, Sort.by("name"));
 		//Act
-		Page<ProductDTO> result = service.findAllPaged(pageRequest);
+		Page<ProductDTO> result = service.findAllPaged(0L, "", pageRequest);
 		//Assertions
 		Assertions.assertFalse(result.isEmpty());
 		Assertions.assertEquals("Macbook Pro", result.getContent().get(0).getName());
@@ -90,5 +90,5 @@ public class ProductServiceIT {
 		Assertions.assertEquals("PC Gamer", result.getContent().get(1).getName());
 		Assertions.assertEquals("PC Gamer Alfa", result.getContent().get(2).getName());
 	}
- */
+ 
 }
